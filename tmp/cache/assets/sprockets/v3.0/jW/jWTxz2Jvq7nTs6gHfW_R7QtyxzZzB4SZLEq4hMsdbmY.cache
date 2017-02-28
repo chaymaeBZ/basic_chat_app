@@ -1,0 +1,11 @@
+I"Í(function() {
+  var messages_appender;
+
+  messages_appender = function(content) {
+    return $('#messages-table').append(content);
+  };
+
+  $(document).on('turbolinks:load', function() {});
+
+}).call(this);
+:ET

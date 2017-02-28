@@ -1,0 +1,13 @@
+I"ÿ(function() {
+  var messages_appender;
+
+  messages_appender = function(content) {
+    return $('#messages-table').append(content);
+  };
+
+  $(document).on('turbolinks:load', function() {
+    return messages_appender("hello, world!");
+  });
+
+}).call(this);
+:ET

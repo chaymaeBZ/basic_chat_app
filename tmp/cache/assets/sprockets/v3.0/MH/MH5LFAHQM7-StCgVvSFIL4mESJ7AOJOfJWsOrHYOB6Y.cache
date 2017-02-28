@@ -1,0 +1,9 @@
+I"˜(function() {
+  var messages_appender;
+
+  messages_appender = function(content) {
+    return $('#messages-table').append(content);
+  };
+
+}).call(this);
+:ET

@@ -1,0 +1,29 @@
+I"+(function() {
+  var submit_message;
+
+  App.room = App.cable.subscriptions.create("RoomChannel", {
+    connected: function() {},
+    disconnected: function() {},
+    received: function(data) {
+      if (data.content.blank == null) {
+        return $("#messages-table").append('<div class="message">' + '<div class="message-user">' + data.username + ': ' + '</div>' + '<div class="message-content">' + data.content + '</div>' + '</div>');
+      }
+    }
+  });
+
+  $(document).on('turbolinks:load', function() {
+    return submit_message();
+  });
+
+  submit_message = function() {
+    return $('#message_content').on('keydown', function(event) {
+      if (event.keyCode === 13) {
+        $('input').click();
+        event.target.value = "";
+        return event.preventDefault();
+      }
+    });
+  };
+
+}).call(this);
+:ET

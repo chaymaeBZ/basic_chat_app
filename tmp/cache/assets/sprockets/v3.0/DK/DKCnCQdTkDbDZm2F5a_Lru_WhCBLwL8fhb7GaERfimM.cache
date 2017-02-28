@@ -1,0 +1,16 @@
+I"Ó(function() {
+  App.room = App.cable.subscriptions.create("RoomChannel", {
+    connected: function() {},
+    disconnected: function() {},
+    received: function(data) {
+      if (data.content.blank == null) {
+        $("#messages-table").append('<div class="message">');
+        +'<div class="message-user>"' + data.username + '</div>';
+        +'<div class="message-content">' + data.message + '</div>';
+        return +'</div>';
+      }
+    }
+  });
+
+}).call(this);
+:ET
