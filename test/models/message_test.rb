@@ -14,4 +14,14 @@ class MessageTest < ActiveSupport::TestCase
     @message.content = " "
     assert !@message.valid?
   end
+
+  test "should create mentions array" do
+    @message.content = "@nonexistant"
+    assert @message.mentions
+  end
+
+  test "mentions array should be nil" do
+    @message.content = "@nonexistant"
+    assert @message.mentions.blank?
+  end
 end

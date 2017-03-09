@@ -3,6 +3,6 @@
     <%= message.user.username %>:
   </div>
   <div class="message-content">
-    <%= message.content %>
+    <%= sanitize text_tranformation(message.content) %>
   </div>
 </div>
