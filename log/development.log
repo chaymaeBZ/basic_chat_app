@@ -7439,3 +7439,279 @@ Processing by MessagesController#index as HTML
 Completed 200 OK in 223ms (Views: 217.5ms | ActiveRecord: 1.4ms)
 
 
+Started GET "/cable" for ::1 at 2017-03-11 15:01:57 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/cable/" [WebSocket] for ::1 at 2017-03-11 15:01:57 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+There was an exception - NoMethodError(undefined method `attr_accessor_with_default' for #<Class:0x007fa4a9e80b20>
+Did you mean?  attr_internal_accessor)
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activerecord-5.0.0.1/lib/active_record/dynamic_matchers.rb:21:in `method_missing'
+/Users/bazzaouichaymae/Documents/action_cable_chat_app/app/models/user.rb:3:in `<class:User>'
+/Users/bazzaouichaymae/Documents/action_cable_chat_app/app/models/user.rb:1:in `<top (required)>'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:477:in `load'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:477:in `block in load_file'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:662:in `new_constants_in'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:476:in `load_file'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:375:in `block in require_or_load'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:37:in `block in load_interlock'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/dependencies/interlock.rb:12:in `block in loading'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/concurrency/share_lock.rb:117:in `exclusive'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/dependencies/interlock.rb:11:in `loading'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:37:in `load_interlock'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:358:in `require_or_load'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:511:in `load_missing_constant'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:203:in `const_missing'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:543:in `load_missing_constant'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:203:in `const_missing'
+/Users/bazzaouichaymae/Documents/action_cable_chat_app/app/helpers/sessions_helper.rb:15:in `current_user'
+/Users/bazzaouichaymae/Documents/action_cable_chat_app/app/helpers/sessions_helper.rb:20:in `logged_in?'
+/Users/bazzaouichaymae/Documents/action_cable_chat_app/app/channels/application_cable/connection.rb:12:in `find_verified_user'
+/Users/bazzaouichaymae/Documents/action_cable_chat_app/app/channels/application_cable/connection.rb:8:in `connect'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/actioncable-5.0.0.1/lib/action_cable/connection/base.rb:167:in `handle_open'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/actioncable-5.0.0.1/lib/action_cable/server/worker.rb:58:in `block in invoke'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/actioncable-5.0.0.1/lib/action_cable/server/worker.rb:39:in `block in work'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:126:in `call'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:455:in `call'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:448:in `block (2 levels) in around'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:286:in `block (2 levels) in halting'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/actioncable-5.0.0.1/lib/action_cable/server/worker/active_record_connection_management.rb:14:in `block in with_database_connections'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/actioncable-5.0.0.1/lib/action_cable/connection/tagged_logger_proxy.rb:22:in `block in tag'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:70:in `tagged'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/actioncable-5.0.0.1/lib/action_cable/connection/tagged_logger_proxy.rb:22:in `tag'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/actioncable-5.0.0.1/lib/action_cable/server/worker/active_record_connection_management.rb:14:in `with_database_connections'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:382:in `block in make_lambda'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:285:in `block in halting'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:447:in `block in around'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:455:in `call'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:448:in `block (2 levels) in around'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:286:in `block (2 levels) in halting'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/actioncable-5.0.0.1/lib/action_cable/engine.rb:60:in `block (4 levels) in <class:Engine>'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/execution_wrapper.rb:76:in `wrap'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/actioncable-5.0.0.1/lib/action_cable/engine.rb:55:in `block (3 levels) in <class:Engine>'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:391:in `instance_exec'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:391:in `block in make_lambda'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:285:in `block in halting'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:447:in `block in around'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:455:in `call'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:750:in `_run_work_callbacks'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:90:in `run_callbacks'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/actioncable-5.0.0.1/lib/action_cable/server/worker.rb:38:in `work'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/actioncable-5.0.0.1/lib/action_cable/server/worker.rb:56:in `invoke'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/actioncable-5.0.0.1/lib/action_cable/server/worker.rb:51:in `block in async_invoke'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:348:in `run_task'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:337:in `block (3 levels) in create_worker'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:320:in `loop'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:320:in `block (2 levels) in create_worker'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:319:in `catch'
+/Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/concurrent-ruby-1.0.2/lib/concurrent/executor/ruby_thread_pool_executor.rb:319:in `block in create_worker'
+Finished "/cable/" [WebSocket] for ::1 at 2017-03-11 15:05:02 +0000
+Started GET "/messages" for ::1 at 2017-03-11 15:06:15 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MessagesController#index as HTML
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bazzaouichaymae/Documents/action_cable_chat_app/app/models/user.rb:12: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/models/user.rb:12: syntax error, unexpected end-of-input, expecting keyword_end
+app/helpers/sessions_helper.rb:15:in `current_user'
+app/helpers/sessions_helper.rb:20:in `logged_in?'
+app/controllers/application_controller.rb:7:in `logged_in_user'
+  Rendering /Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.6ms)
+  Rendering /Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendering /Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (410.7ms)
+  Rendering /Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/bazzaouichaymae/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (466.8ms)
+Started GET "/messages" for ::1 at 2017-03-11 15:06:29 +0000
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" ORDER BY "messages"."created_at" DESC LIMIT ?[0m  [["LIMIT", 50]]
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [37 times] (243.1ms)
+  Rendered messages/_messages.html.erb (245.3ms)
+  Rendered messages/_message_form.html.erb (8.4ms)
+  Rendered messages/index.html.erb within layouts/application (258.3ms)
+  Rendered layouts/_logo.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+Completed 200 OK in 800ms (Views: 745.2ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/cable" for ::1 at 2017-03-11 15:06:30 +0000
+Started GET "/cable/" [WebSocket] for ::1 at 2017-03-11 15:06:30 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vY2hhdC1hcHAvVXNlci8x)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+RoomChannel is streaming from room_channel_user_1
+Started POST "/messages" for ::1 at 2017-03-11 15:06:38 +0000
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"content"=>"@alice"}, "commit"=>"Send"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" ORDER BY "messages"."created_at" DESC LIMIT ?[0m  [["LIMIT", 50]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "messages" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "@alice"], ["user_id", 1], ["created_at", 2017-03-11 15:06:38 UTC], ["updated_at", 2017-03-11 15:06:38 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  Rendered messages/_message.html.erb (5.0ms)
+[ActionCable] Broadcasting to room_channel: {:message=>"<div class=\"message\">\n  <div class=\"message-user\">\n    alice:\n  </div>\n  <div class=\"message-content\">\n    <p><em>@alice</em></p>\n\n  </div>\n</div>\n"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "alice"], ["LIMIT", 1]]
+RoomChannel transmitting {"message"=>"<div class=\"message\">\n  <div class=\"message-user\">\n    alice:\n  </div>\n  <div class=\"message-content\">\n    <p><em>@alice</em></p>\n\n  </div>\n</div>\n"} (via streamed from room_channel)
+[ActionCable] Broadcasting to room_channel_user_1: {:mention=>true, :from=>#<User id: 1, username: "alice", password_digest: "$2a$10$BcaDsKG4DwB8WVLsuVcTwOnRybsqGnKea3Wup8oyDcV...", created_at: "2017-02-28 12:17:52", updated_at: "2017-02-28 12:17:52">, :is_online=>false}
+Completed 200 OK in 35ms (Views: 19.2ms | ActiveRecord: 3.0ms)
+
+
+RoomChannel transmitting {"mention"=>true, "from"=>{"id"=>1, "username"=>"alice", "password_digest"=>"$2a$10$BcaDsKG4DwB8WVLsuVcTwOnRybsqGnKea3Wup8oyDcVAmdOxL7fmS", "created_at"=>"2017-02-28T12:17:52.527Z", "updated_at"=>"2017-02-28T12:17:52.527Z"}, "is_online"=>false} (via streamed from room_channel_user_1)
+Started GET "/messages" for ::1 at 2017-03-11 15:06:44 +0000
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" ORDER BY "messages"."created_at" DESC LIMIT ?[0m  [["LIMIT", 50]]
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [38 times] (263.7ms)
+  Rendered messages/_messages.html.erb (265.9ms)
+  Rendered messages/_message_form.html.erb (1.0ms)
+  Rendered messages/index.html.erb within layouts/application (269.9ms)
+  Rendered layouts/_logo.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 299ms (Views: 291.0ms | ActiveRecord: 1.5ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-03-11 15:06:44 +0000
+RoomChannel stopped streaming from room_channel
+RoomChannel stopped streaming from room_channel_user_1
+Started GET "/cable" for ::1 at 2017-03-11 15:06:44 +0000
+Started GET "/cable/" [WebSocket] for ::1 at 2017-03-11 15:06:44 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vY2hhdC1hcHAvVXNlci8x)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_user_1
+RoomChannel is streaming from room_channel
+Started POST "/messages" for ::1 at 2017-03-11 15:06:49 +0000
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"content"=>"@alice"}, "commit"=>"Send"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" ORDER BY "messages"."created_at" DESC LIMIT ?[0m  [["LIMIT", 50]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "messages" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "@alice"], ["user_id", 1], ["created_at", 2017-03-11 15:06:49 UTC], ["updated_at", 2017-03-11 15:06:49 UTC]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  Rendered messages/_message.html.erb (3.3ms)
+[ActionCable] Broadcasting to room_channel: {:message=>"<div class=\"message\">\n  <div class=\"message-user\">\n    alice:\n  </div>\n  <div class=\"message-content\">\n    <p><em>@alice</em></p>\n\n  </div>\n</div>\n"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "alice"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to room_channel_user_1: {:mention=>true, :from=>#<User id: 1, username: "alice", password_digest: "$2a$10$BcaDsKG4DwB8WVLsuVcTwOnRybsqGnKea3Wup8oyDcV...", created_at: "2017-02-28 12:17:52", updated_at: "2017-02-28 12:17:52">, :is_online=>false}
+RoomChannel transmitting {"message"=>"<div class=\"message\">\n  <div class=\"message-user\">\n    alice:\n  </div>\n  <div class=\"message-content\">\n    <p><em>@alice</em></p>\n\n  </div>\n</div>\n"} (via streamed from room_channel)
+Completed 200 OK in 28ms (Views: 15.5ms | ActiveRecord: 4.3ms)
+
+
+RoomChannel transmitting {"mention"=>true, "from"=>{"id"=>1, "username"=>"alice", "password_digest"=>"$2a$10$BcaDsKG4DwB8WVLsuVcTwOnRybsqGnKea3Wup8oyDcVAmdOxL7fmS", "created_at"=>"2017-02-28T12:17:52.527Z", "updated_at"=>"2017-02-28T12:17:52.527Z"}, "is_online"=>false} (via streamed from room_channel_user_1)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "alice"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "alice"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "alice"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "alice"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
