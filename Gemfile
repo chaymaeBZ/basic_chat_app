@@ -12,6 +12,8 @@ gem 'turbolinks',              '5.0.0'
 gem 'jbuilder',                '2.4.1'
 gem 'kramdown',                '1.12.0'
 
+gem 'draper'
+
 group :development, :test do
   gem 'sqlite3', '1.3.11'
   gem 'byebug',  '9.0.0', platform: :mri
@@ -22,6 +24,7 @@ group :development do
   gem 'listen',                '3.0.8'
   gem 'spring',                '1.7.2'
   gem 'spring-watcher-listen', '2.0.0'
+  gem 'guard-livereload'
 end
 
 group :test do

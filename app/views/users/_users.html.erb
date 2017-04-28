@@ -1,0 +1,10 @@
+<table class="users-table">
+  <tr>
+    <th>Status</th>
+    <th> People </th>
+  </tr>
+
+  <% if @users.any? %>
+    <%= render @users %>
+  <% end %>
+</table>
