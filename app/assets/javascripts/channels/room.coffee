@@ -6,7 +6,7 @@ App.room = App.cable.subscriptions.create "RoomChannel",
     # Called when the subscription has been terminated by the server
 
   received: (data) ->
-    # Called when there's incoming data on the websocket for this channel
+# Called when there's incoming data on the websocket for this channel
     alert("you have a new mention! from @#{data.from.username}") if data.mention
     if (data.message && !data.message.blank?)
       $("#messages-table").append data.message
